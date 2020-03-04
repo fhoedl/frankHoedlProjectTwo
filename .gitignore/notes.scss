@@ -1,0 +1,36 @@
+// SCSS FUNCTIONS
+// a.home {
+//     background:$primaryColor;
+
+//     &:hover {
+//     background: lighten($primaryColor, 10) //10% lighter than $primary;
+//     }
+
+//     &:visited {
+//     background: darken($primaryColor, 10) //10% darker than $primary;
+//     }
+// }
+
+// MIXINS...
+// @mixin mixinName($name: default value)
+// @mixin fontStyle($fontSize: 20px) {
+//     color: green;
+//     background-color: $primaryColor;
+//     font-size: $fontSize;
+// }
+
+// h4 {
+//     @include fontStyle();
+// }
+
+// OVERLAY MIXIN
+// @mixin overlay($color: #000, $alpha: .7) {
+//     position: absolute;
+//     display: block;
+//     content:'';
+//     top: 0;
+//     bottom: 0;
+//     right: 0;
+//     left: 0;
+//     background-color: rgba($color,$alpha);
+// }
