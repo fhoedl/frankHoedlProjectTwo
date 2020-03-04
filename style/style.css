@@ -13,7 +13,81 @@ html {
 }
 
 body {
-    /* drop in font-family:...;*/
-    /* add another item to body, if required ie: color */
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Lora', serif;
+    color: #000;
 }
 
+/* Headings */
+h1,
+h2,
+h3,      
+h4,
+h5,
+a{
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase ;
+}
+
+/* Title Text */
+h1{
+    font-size: 4.6rem;
+    line-height: 2.4rem;
+    letter-spacing: 1.1rem;
+
+}
+/* Body Style */
+h2{
+    font-size: 1.8rem;
+    line-height: 3.6rem;
+    letter-spacing: .5rem;
+}
+h3{
+
+}
+
+/* 
+topBar
+topMainMenu
+topMobileMenu
+subMenu
+featureRecipe
+button
+feature
+featureRecipe
+featureCategories
+featureImg
+restaurants
+galleryContainer
+galleryImg
+sticker
+quote
+card
+contactCard
+contactCardTitle
+contactName
+contactAddress
+contactTel
+postsCard
+postsCardTitle
+subscribeCard
+subscribeEmail
+socialIcons
+smlSocialIcon
+
+...icons
+fas
+fa-plus
+fa-shopping-bag
+fa-search           f002
+fa-lemon            f094
+fa-utensils         f2e7
+fa-coffee           f0f4
+fa-glass-martini    f000
+fa-leaf             f06c
+fa-utensil-spoon    f2e5
+fa-quote-left       f10d
+fa-quote-right      f10e
+fa-chevron-left     f053
+fa-chevron-right    f054
+*/
