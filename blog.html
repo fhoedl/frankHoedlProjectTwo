@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./styles/styles.css">
     <title>Delicious Blog</title>
 </head>
 <body>
@@ -18,27 +18,106 @@
             <!-- blog Title section -->
             <div class="blogTitleHead">
                 <h1 class="blogTitle">pineapple chicken</h1>
-                <p class="blogDate">posted at July 11, 2018</p>
-                <p class="blogBy">by admin</p>
-                <div class="blogCategory">
-                    <a href="#recipes">in Recipes</a>
+                <div class="blogInfo">
+                    <p class="blogDate">posted at July 11, 2018</p>
+                    <p class="blogBy">| by admin</p>
+                    <div class="blogCategory">
+                        <a href="#recipes">| in Recipes</a>
+                    </div>
                 </div>
             </div>
 
             <!-- blog Content section -->
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa reprehenderit nisi esse commodi sunt unde laborum odio! Maxime sequi perspiciatis autem itaque, dolore totam iste perferendis, consequatur molestias accusantium quisquam? Inventore similique omnis quaerat? 
-            </p>
-            <!-- create button to open collapsed article -->
-            <a class="blogHidden" href="#blogReveal">continue reading</a>
-            <!-- hide on larger pages -->
-            <p class="blogShown" id="blogReveal">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima explicabo aspernatur voluptas assumenda delectus! Velit explicabo repellendus culpa provident aut?
-
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt reprehenderit dolor sed iusto, aperiam cum ipsum provident eum sequi! Facilis impedit, non sapiente deserunt fugit ab laboriosam rem repellendus assumenda repudiandae, inventore iste.
-            </p>
-
-
+            <div class="blogText">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa reprehenderit nisi esse commodi sunt unde laborum odio! Maxime sequi perspiciatis autem itaque, dolore totam iste perferendis, consequatur molestias accusantium quisquam? Inventore similique omnis quaerat? 
+                </p>
+    <!-- create button to open collapsed article -->
+                <a class="blogHidden" href="#blogReveal">continue reading</a>
+                <!-- hidden on smaller pages -->
+                <div class="blogShown" id="blogReveal">
+                    <p >
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima explicabo aspernatur voluptas assumenda delectus! Velit explicabo repellendus culpa provident aut?
+                    </p>
+                    <p >
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt reprehenderit dolor sed iusto, aperiam cum ipsum provident eum sequi! Facilis impedit, non sapiente deserunt fugit ab laboriosam rem repellendus assumenda repudiandae, inventore iste.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates temporibus necessitatibus beatae, esse corporis tempore ab unde ea odit, quis asperiores exercitationem eos debitis magni? Dolor magnam assumenda eius labore dolorem, ab, accusantium placeat vel perspiciatis officia culpa ipsa nulla odio asperiores excepturi dolores doloribus ducimus rem suscipit quas eos esse velit. Amet, velit nesciunt dolorum dolores ratione, reprehenderit officia nisi voluptatum sunt sed cum at fuga delectus dicta sapiente aliquid exercitationem, aspernatur dolorem voluptas quisquam voluptatibus provident ullam. Illo?
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error iste commodi quos? Ea corporis molestias minus quod culpa iste accusamus, dignissimos veniam perspiciatis recusandae excepturi praesentium quos, repudiandae deleniti animi, rem molestiae! Ipsum ducimus deserunt incidunt quisquam fugit, corporis eaque!
+                    </p>
+                    <!-- last block roughly 80 words -->
+                </div>               
+            </div>
+    <!-- line element/potentially border-bottom -->
+            <h4 class="blogTagTitle">tags:</h4>
+            <p class="blogTagItems"></p>
+            <h4 class="blogShareTitle">share:</h4>
+            <div class="blogShareSocial">
+                <ul class="socialIcons blogSocialIcons">
+                    <li class="smlSocialIcon">
+                        <a href="http://facebook.com" aria-label="Click link to Facebook page">
+                            <i aria-hidden class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li class="smlSocialIcon">
+                        <a href="http://twitter.com" aria-label="Click link to Twitter page">
+                            <i aria-hidden class="fab fa-twitter"></i></a>
+                    <!-- change to Instagram -->
+                    <li class="smlSocialIcon">
+                        <a href="https://www.instagram.com" aria-label="Click link to Instagram page">
+                            <i aria-hidden class="fab fa-instagram"></i>
+                    </li>
+                </ul>
+            </div>
         </article>
+        <aside class="blogAuthor">
+            <img src="./assets/blog-2.jpeg" alt="studio portrait of casually dressed Sally Lucas">
+            <div class="blogAuthorInfo">
+                <h3>sally lucas</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui vel a pariatur eius deserunt nisi, nesciunt fugiat nostrum enim, aperiam rem nihil cum tempore? Aut dolores reiciendis debitis nulla ut maiores aliquid corporis eligendi repellendus, earum ipsa, magni quae, unde obcaecati vel quis eum tempore dicta quibusdam quas blanditiis corrupti consequuntur impedit. Odio ullam at in ipsam consequatur.</p>
+            </div>
+            <!-- light grey box containing -->
+    <!-- line element/potentially border-bottom -->
+        </aside>
+        <aside class="blogLinks">
+            <ul>
+                <li>
+                    <div class="blogLinkImg">
+                        <img src="./assets/blog-3.jpeg" alt="detail of woman carrying pink cake on serving plate">
+                    </div>
+                    <h3 class="blogLinkTitle">how to bake the perfect cake</h3>
+                    <div class="blogInfo">
+                        <p class="blogDate">posted at July 11, 2018</p>
+                        <p class="blogBy">| by admin</p>
+                        <div class="blogCategory"><a href="#recipes">| in Recipes</a></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="blogLinkImg">
+                        <img src="./assets/blog-4.jpeg" alt="cupcakes n gold foil topped with icing and flowers">
+                    </div>
+                    <h3 class="blogLinkTitle">floral cupcakes</h3>
+                    <div class="blogInfo">
+                        <p class="blogDate">posted at July 11, 2018</p>
+                        <p class="blogBy">| by admin</p>
+                        <div class="blogCategory"><a href="#recipes">| in Recipes</a></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="blogLinkImg">
+                        <img src="./assets/blog-5.jpeg" alt="detail of salad greens being added to salmon with cream cheese and onions">
+                    </div>
+                    <h3 class="blogLinkTitle">smoked salmon</h3>
+                    <div class="blogInfo">
+                        <p class="blogDate">posted at July 11, 2018</p>
+                        <p class="blogBy">| by admin</p>
+                        <div class="blogCategory"><a href="#recipes">| in Recipes</a></div>
+                    </div>
+                </li>
+            </ul>
+        </aside>
+    <!-- line element/potentially border-bottom -->
     </main>
 
 </body>
