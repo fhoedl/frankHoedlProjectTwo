@@ -17,16 +17,13 @@
         <div class="topBar">        
             <h1>Delicious</h1>
             <nav>
-                <ul class="topMainMenu">
+                <ul class="fas fa-plus mainMenu">
+                <!-- set as hidden -->
+                <!-- alternates
+                <i class="far fa-bars"></i>
+                <i class="fas fa-ellipsis-h"></i> -->
+                <!-- set with Flex -->
                     <li>
-                        <li>
-                            <!-- set as hidden -->
-                            <i class="fas fa-plus topMobileMenu"></i>
-                            <!-- alternates
-                                <i class="far fa-bars"></i>
-                                <i class="fas fa-ellipsis-h"></i> -->
-                        </li>
-                        <!-- set with Flex -->
                         <ul class="subMenu">
                             <li><a href="#home"></a>home</li>
                             <!-- home is green -->
@@ -37,11 +34,16 @@
                             <li><a href="#shop"></a>shop</li>
                             <li><a href="#contact"></a>contact</li>
                             <li>
-                                <i class="fas fa-shopping-bag"></i>
+                                <a href="#" aria-label="Click to view your shopping cart">
+                                    <i aria-hidden="true" class="fas fa-shopping-bag" title="Click to View Shopping Cart"></i>
+                                </a>
                                 <P>2</P>
                                 <!-- 2 styled inside circle, above shopping bag -->
                             </li>
-                            <li><i class="fas fa-search"></i></li>
+                            <li><a href="#" aria-label="Click to view your shopping cart">
+                                <i aria-hidden="true" class="fas fa-search" title="Click to Search Site"></i>
+                            </a>
+                            </li>
                         </ul>
                     </li>
                 </ul>
@@ -60,34 +62,34 @@
         </div>
         <section class="feature featureCategories">
             <ul>
-                <li class="category" >
-                    <i class="fas fa-lemon"></i>
+                <li>
+                    <i aria-hidden="true" class="fas fa-lemon"></i>
                     <h3>vegetarian</h3>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis nesciunt, illo nihil perferendis vitae sint tempora voluptas tempore suscipit?</p>
                     <!-- 19 words -->
                 </li>
                 <li>
-                    <i class="fas fa-utensils"></i>
+                    <i aria-hidden="true" class="fas fa-utensils"></i>
                     <h3>appetizers</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi architecto facilis sint soluta! Quod, magnam. Perspiciatis, odio. Dolores, sapiente?</p>
                 </li>   
                 <li>
-                    <i class="fas fa-coffee"></i>
+                    <i aria-hidden="true" class="fas fa-coffee"></i>
                     <h3>desserts</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium in natus earum incidunt pariatur adipisci animi excepturi tenetur aliquam.</p>
                 </li>
                 <li>
-                    <i class="fas fa-glass-martini"></i>
+                    <i aria-hidden="true" class="fas fa-glass-martini"></i>
                     <h3>drinks</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, quidem obcaecati dolore totam repudiandae ex facilis quibusdam fugit corrupti!</p>
                 </li>
                 <li>
-                    <i class="fas fa-leaf"></i>
+                    <i aria-hidden="true" class="fas fa-leaf"></i>
                     <h3>salads</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla accusantium cum facere sapiente, fuga delectus laboriosam quae vitae esse?</p>
                 </li>
                 <li>
-                    <i class="fas fa-utensil-spoon"></i>
+                    <i aria-hidden="true" class="fas fa-utensil-spoon"></i>
                     <h3>side dishes</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quae, totam minus rem facilis deserunt corrupti pariatur facere vero.</p>
                 </li>              
@@ -114,66 +116,75 @@
             <li class="galleryImg"><img src="./assets/home-10.jpeg" alt="dip with green herbs in a white bowl from overhaed"></li>
         </ul>
     </section>
-    <aside>
+    <blockquote>
         <h2>hungry clients</h2>
         <!-- green underline graphic element-->
         <!-- on p :pseduo quotes, before and after -->
-        <i class="fas fa-quote-left"></i>
-        <p class="quote">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident illo recusandae, omnis molestiae illum laudantium soluta laboriosam excepturi eum voluptate, saepe explicabo sit consequatur itaque repellendus amet aliquam hic magnam corporis ratione fugiat! Quam provident delectus ut molestias repellendus?</p>
-        <i class="fas fa-quote-right"></i>
+        <i aria-hidden="true" class="fas fa-quote-left"></i>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident illo recusandae, omnis molestiae illum laudantium soluta laboriosam excepturi eum voluptate, saepe explicabo sit consequatur itaque repellendus amet aliquam hic magnam corporis ratione fugiat! Quam provident delectus ut molestias repellendus?</p>
+        <i aria-hidden="true" class="fas fa-quote-right"></i>
         <div class="scrollNav">
-            <i class="fas fa-chevron-left"></i>
-            <i class="fas fa-chevron-right"></i>
+            <i aria-hidden="true" class="fas fa-chevron-left"></i>
+            <i aria-hidden="true"class="fas fa-chevron-right"></i>
         </div>
         <!-- forward arrow -->
-    </aside>
+    </blockquote>
+    
     <footer>
-        <section class="card contactCard">
-            <h4 class="contactCardTitle">Delicious</h4>
-            <!-- underline with border-botton ? -->
-            <p class="contactName" >a delicious restaurant</p>
-            <p class="contactAddress">tortonto, ontario</p>
-            <p class="contactEmail">yum@food.com</p>
-            <p class="contactTel">+1 234 567 8910</p>
-        </section>
-        <section class="card postsCard">
-            <h3>recent posts</h3>
-            <ul class="postsCardTitle" >
-                <li>lorem ipsum dolor sit amet</li>
-                <li>consectetur adipisicing elit quibusdam</li>
-                <li>neque repudiandae nostrum distinctio harum</li>
-                <li> Ea molestiae ad recusandae explicabo </li>
-                <li>dolore voluptatem eaque iste aspernatur debitis?</li>
-                <li>omnis molestiae illum laudantium soluta</li>
-            </ul>
-        </section>
-        <section class="card subscribeCard">
-            <h3>subscribe now</h3>
-            <p>get all of our newest resipes immediately in your inbox!</p>
-            <form class="subscribeEmail" action="subscribe">
-                <input type="email" name="subscribeEmail" id="">
-                <input type="submit" value="f30b">
-                <!-- <i class="fas fa-long-arrow-alt-right"></i> -->
-            </form>
-            <div>
-                <ul class="socialIcons">
-                    <li class="smlSocialIcon">
-                        <a href="http://facebook.com" aria-label="Click link to Facebook page" >
-                            <i aria-hidden class="fab fa-facebook-f"></i></a>
-                    </li>
-                    <li class="smlSocialIcon">
-                        <a href="http://twitter.com" aria-label="Click link to Twitter page" >
-                            <i aria-hidden class="fab fa-twitter"></i></a>
-                    </li>
-                    <li class="smlSocialIcon">
-                        <a href="https://www.instagram.com"
-                            aria-label="Click link to Instagram page" >
-                            <i aria-hidden class="fab fa-instagram"></i>
-                        </a>
-                    </li>
+        <div class="smallwrapper">
+            <address class="card contactCard">
+                <h4 class="contactCardTitle">Delicious</h4>
+                <!-- underline with border-botton ? -->
+                <p class="contactName" >a delicious restaurant</p>
+                <p class="contactAddress">tortonto, ontario</p>
+                <!-- underline with border-botton ? -->
+                <p class="contactEmail">yum@food.com</p>
+                <!-- underline with border-botton ? -->
+                <p class="contactTel">+1 234 567 8910</p>
+            </address>
+
+            <section class="card postsCard">
+                <h3 class="postsCardTitle">recent posts</h3>
+                <ul>
+                    <li>lorem ipsum dolor sit amet</li>
+                    <!-- underline with border-botton, all except last item? -->
+                    <li>consectetur adipisicing elit quibusdam</li>
+                    <li>neque repudiandae nostrum distinctio harum</li>
+                    <li> Ea molestiae ad recusandae explicabo </li>
+                    <li>dolore voluptatem eaque iste aspernatur debitis?</li>
+                    <li>omnis molestiae illum laudantium soluta</li>
                 </ul>
-            </div>
-        </section>
+            </section>
+
+            <section class="card subscribeCard">
+                <h3>subscribe now</h3>
+                <p>get all of our newest resipes immediately in your inbox!</p>
+                <form class="subscribeEmail" action="subscribe">
+                    <input type="email" name="subscribeEmail" id="subscribeEmail" placeholder="enter your email">
+                    <button type="submit" for="subscribeEmail"><i aria-label="Click to submit email"aria-hidden class="fas fa-long-arrow-alt-right"></i></button>
+                </form>
+        <!-- line below email, border-bottom of form -->
+                <div class="socialIcons">
+                    <ul>
+                        <li>
+                            <a href="http://facebook.com" aria-label="Click link to Facebook page">
+                                <i aria-hidden="true" class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://twitter.com" aria-label="Click link to Twitter page">
+                                <i aria-hidden="true" class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com" aria-label="Click link to Instagram page" >
+                                <i aria-hidden="true" class="fab fa-instagram" ></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
     </footer>
 </body>
 </html>
