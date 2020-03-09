@@ -1,0 +1,94 @@
+header.homepage {
+    background-image: url(../assets/home-1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 400px;
+    background-position: 10% 0%;
+}
+
+.topBar {
+    padding-bottom: 40%;
+}
+
+// LOGO
+.logoHome {
+    margin:0;
+    padding: calc(10px + 1%);
+}
+
+// NAVIGATION
+nav{
+    display:block;
+    width: 130px;
+    text-align: left;
+    margin: 0 0 1rem 0;
+    padding-left: calc(10px + 1% + .3rem);
+        // SUBMENU....
+        ul.subMenu{
+            top: 40px;
+            // using transform instead of display:none;
+            transform-origin: left;
+            transform:scale(1,1);
+            transition: all .7s ease-in-out; 
+                li{
+                    margin: .6rem 0;
+                }   
+        }           
+}
+
+// ...Nav SubMenu Reveal
+.navToggle:checked  ~ ul.subMenu {
+    // using transform instead of display:none;
+    transform: scale(0,1);
+}
+
+// ...Hiding checkbox
+.navToggle {
+    display: none;
+}
+
+// ...accent colour on Hamburger Menu
+header label i {
+    font-weight: 900;
+    font-size: 3.2rem;
+    color: $accentColor;
+}
+
+// ...NAV Interactions
+nav li:hover a {
+    color: $accentColor;
+}
+
+
+
+// MEDIA QUERIES only at 1080 px
+@media(min-width:1080px) {
+    // NAVAGATION
+    .navToggle:checked  ~ ul.subMenu {
+        transform: scale(1,1);
+    }
+    
+    .navHamburger{
+        display: none;
+    }
+
+    .topBar{
+        display: grid;
+        grid-template-columns: 46% 11% 1fr ;           
+    }
+
+    nav {
+        grid-column: 2/3;
+    }
+
+    .subMenu {
+        width: 50vw;
+        display:flex;
+        justify-content: space-between;  
+    }
+
+    .subMenu a{
+        line-height: 3rem;
+    }
+    // ...end Navigation
+}

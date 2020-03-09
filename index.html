@@ -5,57 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link
         href="https://fonts.googleapis.com/css?family=Lora:400,400i|Raleway:700&display=swap"
-        rel="stylesheet"><!-- google fonts link -->
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/eea5571693.js"
         crossorigin="anonymous"></script>    
-    <link rel="stylesheet" href="./styles/styles.css"><!-- font awesome link -->  
+    <link rel="stylesheet" href="./styles/styles.css">  
     <title>Delicious Home Page</title>
 </head>
 <body>
-    <header>
-    <!-- background image -->
-        <div class="topBar">        
-            <h1>Delicious</h1>
-            <nav>
-                <ul class="fas fa-plus mainMenu">
-                <!-- set as hidden -->
-                <!-- alternates
-                <i class="far fa-bars"></i>
-                <i class="fas fa-ellipsis-h"></i> -->
-                <!-- set with Flex -->
+
+    <header class="homepage">
+        <div class="topBar">
+            <!-- LOGO -->
+            <h1 class="logo logoHome">Delicious</h1> 
+            <!-- NAVIGATION -->
+            <nav>   
+                <!-- Checkbox -->
+                <input type="checkbox" name="navToggle" id="navToggle" class="navToggle">
+                <!-- Label w/styling for Checkbox -->
+                <label for="navToggle" class="navHamburger">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <ul class="subMenu">
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#recipes">recipes</a></li>
+                    <li><a href="#nutrition">nutrition</a></li>
+                    <li><a href="./blog.html">blog</a></li>
+                    <li><a href="#shop">shop</a></li>
+                    <li><a href="#contact">contact</a></li>
                     <li>
-                        <ul class="subMenu">
-                            <li><a href="#home"></a>home</li>
-                            <!-- home is green -->
-                            <li><a href="#about"></a>about</li>
-                            <li><a href="#recipes"></a>recipes</li>
-                            <li><a href="#nutrition"></a>nutrition</li>
-                            <li><a href="#blog"></a>blog</li>
-                            <li><a href="#shop"></a>shop</li>
-                            <li><a href="#contact"></a>contact</li>
-                            <li>
-                                <a href="#" aria-label="Click to view your shopping cart">
-                                    <i aria-hidden="true" class="fas fa-shopping-bag" title="Click to View Shopping Cart"></i>
-                                </a>
-                                <P>2</P>
-                                <!-- 2 styled inside circle, above shopping bag -->
-                            </li>
-                            <li><a href="#" aria-label="Click to view your shopping cart">
-                                <i aria-hidden="true" class="fas fa-search" title="Click to Search Site"></i>
-                            </a>
-                            </li>
-                        </ul>
+                        <a href="#" aria-label="Click to view your shopping cart">
+                            <i aria-hidden="true" class="fas fa-shopping-bag" title="Click to View Shopping Cart"></i></a>
+                        <!-- <P>2</P> -->
+                        <!-- 2 styled inside circle, above shopping bag -->
+                    </li>
+                    <li>
+                        <a href="#" aria-label="Click to view your shopping cart">
+                        <i aria-hidden="true" class="fas fa-search" title="Click to Search Site"></i></a>
                     </li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
+
         <div class="featureContainer">
             <section class="feature featureRecipe">
-                <h2>most popular recipes</h2>     
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, quis. Porro alias amet quasi ea. Possimus provident nemo atque enim eligendi, fugit commodi quia in corrupti? Consequatur laboriosam perspiciatis nam a reprehenderit, cupiditate, recusandae aperiam hic commodi, dicta est ex aspernatur beatae tempora ipsum unde ut! Provident, repudiandae.</p>
-                <!-- 48 words -->
+                <h2>most popular recipes</h2>  
+                <div class="graphicLine"></div>
+                <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong
+                celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens
+                parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel
+                azuki bean earthnut pea sierra leone bologi leek soko chicory celtuce parsley
+                jícama salsify.</p>
                 <a class="button" href="http://">view recipes</a>
             </section>
             <div class="feature featureImg">
@@ -70,49 +72,60 @@
                     <li>
                         <i aria-hidden="true" class="fas fa-lemon"></i>
                         <h3>vegetarian</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis nesciunt, illo nihil perferendis vitae sint tempora voluptas tempore suscipit?</p>
-                        <!-- 19 words -->
+                        <p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion
+                        daikon amaranth tatsoi tomatillo melon azuki bean.    </p>
                     </li>
                     <li>
                         <i aria-hidden="true" class="fas fa-utensils"></i>
                         <h3>appetizers</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi architecto facilis sint soluta! Quod, magnam. Perspiciatis, odio. Dolores, sapiente?</p>
+                        <p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion
+                        daikon amaranth tatsoi tomatillo melon azuki bean.</p>
                     </li>   
                     <li>
                         <i aria-hidden="true" class="fas fa-coffee"></i>
                         <h3>desserts</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium in natus earum incidunt pariatur adipisci animi excepturi tenetur aliquam.</p>
+                        <p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion
+                        daikon amaranth tatsoi tomatillo melon azuki bean.</p>
                     </li>
                     <li>
                         <i aria-hidden="true" class="fas fa-glass-martini"></i>
                         <h3>drinks</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, quidem obcaecati dolore totam repudiandae ex facilis quibusdam fugit corrupti!</p>
+                        <p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion
+                        daikon amaranth tatsoi tomatillo melon azuki bean.</p>
                     </li>
                     <li>
                         <i aria-hidden="true" class="fas fa-leaf"></i>
                         <h3>salads</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla accusantium cum facere sapiente, fuga delectus laboriosam quae vitae esse?</p>
+                        <p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion
+                        daikon amaranth tatsoi tomatillo melon azuki bean.</p>
                     </li>
                     <li>
                         <i aria-hidden="true" class="fas fa-utensil-spoon"></i>
                         <h3>side dishes</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quae, totam minus rem facilis deserunt corrupti pariatur facere vero.</p>
+                        <p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion
+                        daikon amaranth tatsoi tomatillo melon azuki bean.</p>
                     </li>              
                 </ul>
             </section>
 
         </div>
     </main>
+
     <section class="restaurant">
         <div>
-            <img class="sticker" src="./assets/home-circle-text.png" alt="a fancy food place yummmm sticker">
-            <!-- psuedo element floating above img -->
-            <img src="./assets/home-4.jpeg" alt="wooden tables and chairs in brightly lit stone patio">
+            <div class="restaurantImgElements">
+                <img class="sticker" src="./assets/home-circle-text.png" alt="a fancy food place yummmm sticker">
+                <img class="restaurantImg" src="./assets/home-4.jpeg" alt="wooden tables and chairs in brightly lit stone patio">
+            </div>
             <h2>our restaurants</h2>
             <div class="graphicLine"></div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolore amet sit, eaque maxime illum? Enim expedita dolor blanditiis saepe laudantium eius autem est, quia reiciendis impedit commodi?</p>
+            <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi
+            pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion
+            cucumber earthnut pea peanut soko zucchini.
+            </p>
         </div>
     </section>
+
     <section >
         <ul class="galleryContainer">
             <li class="galleryImg galleryImg1">
@@ -138,11 +151,15 @@
 
     <blockquote>
         <h2>hungry clients</h2>
-        <!-- green underline graphic element-->
-        <!-- on p :pseduo quotes, before and after -->
-        <i aria-hidden="true" class="fas fa-quote-left"></i>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident illo recusandae, omnis molestiae illum laudantium soluta laboriosam excepturi eum voluptate, saepe explicabo sit consequatur itaque repellendus amet aliquam hic magnam corporis ratione fugiat! Quam provident delectus ut molestias repellendus?</p>
-        <i aria-hidden="true" class="fas fa-quote-right"></i>
+        <div class="graphicLine"></div>
+        <div class="quote quote1">
+            <i aria-hidden="true" class="fas fa-quote-left"></i>
+            <p>Beetroot water spinach okra water chestnut ricebean pea catsear courgette summer
+            purslane. Water spinach arugula pea tatsoi aubergine spring onion bush tomato
+            kale radicchio turnip chicory salsify pea sprouts fava bean. Dandelion zucchini
+            burdock yarrow chickpea dandelion</p>
+            <i aria-hidden="true" class="fas fa-quote-right"></i>
+        </div>
         <div class="scrollNav">
             <i aria-hidden="true" class="fas fa-chevron-left"></i>
             <i aria-hidden="true"class="fas fa-chevron-right"></i>
@@ -150,61 +167,69 @@
         <!-- forward arrow -->
     </blockquote>
     
+
     <footer>
-        <div class="smallwrapper">
-            <address class="card contactCard">
-                <h4 class="contactCardTitle">Delicious</h4>
-                <!-- underline with border-botton ? -->
-                <p class="contactName" >a delicious restaurant</p>
-                <p class="contactAddress">tortonto, ontario</p>
-                <!-- underline with border-botton ? -->
-                <p class="contactEmail">yum@food.com</p>
-                <!-- underline with border-botton ? -->
-                <p class="contactTel">+1 234 567 8910</p>
-            </address>
+        <div class="cardContainer smallWrapper">
 
-            <section class="card postsCard">
-                <h3 class="postsCardTitle">recent posts</h3>
-                <ul>
-                    <li>lorem ipsum dolor sit amet</li>
-                    <!-- underline with border-botton, all except last item? -->
-                    <li>consectetur adipisicing elit quibusdam</li>
-                    <li>neque repudiandae nostrum distinctio harum</li>
-                    <li> Ea molestiae ad recusandae explicabo </li>
-                    <li>dolore voluptatem eaque iste aspernatur debitis?</li>
-                    <li>omnis molestiae illum laudantium soluta</li>
-                </ul>
-            </section>
+                <section class="card contactCard">
+                    <div class="cardContent">
+                        <h4 class="contactCardTitle">Delicious</h4>
+                        <p>Soko radicchio bunya nuts gram dulse silver beet parsnip napa cabbage lotus root
+                        sea lettuce brussels sprout cabbage.</p>
+                        <p class="contactName" >a delicious restaurant</p>
+                        <p class="contactAddress">tortonto, ontario</p>
+                        <p class="contactEmail">yum@food.com</p>
+                        <p class="contactTel">+1 234 567 8910</p>
+                    </div>
+                </section>
 
-            <section class="card subscribeCard">
-                <h3>subscribe now</h3>
-                <p>get all of our newest resipes immediately in your inbox!</p>
-                <form class="subscribeEmail" action="subscribe">
-                    <input type="email" name="subscribeEmail" id="subscribeEmail" placeholder="enter your email">
-                    <button type="submit" for="subscribeEmail"><i aria-label="Click to submit email"aria-hidden class="fas fa-long-arrow-alt-right"></i></button>
-                </form>
-        <!-- line below email, border-bottom of form -->
-                <div class="socialIcons">
-                    <ul>
-                        <li>
-                            <a href="http://facebook.com" aria-label="Click link to Facebook page">
-                                <i aria-hidden="true" class="fab fa-facebook-f"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://twitter.com" aria-label="Click link to Twitter page">
-                                <i aria-hidden="true" class="fab fa-twitter"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.instagram.com" aria-label="Click link to Instagram page" >
-                                <i aria-hidden="true" class="fab fa-instagram" ></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </section>
+                <section class="card postsCard">
+                    <div class="cardContent">
+                        <h3 class="postsCardTitle">recent posts</h3>
+                        <ul>
+                            <li><p class="xPaddingF">Beetroot water spinach okra water</p></li>
+                            <li><p>chestnut ricebean pea catsear courgette</p></li>
+                            <li><p>summer purslane spinach arugula pea</p></li>
+                            <li><p>tatsoi aubergine spring onion bush</p></li>
+                            <li><p>tomato kale radicchio turnip chicory</p></li>
+                            <li><p class="noBorderF">salsify pea sprouts fava bean</p></li>
+                        </ul>
+                    </div>
+                </section>
+ 
+                <section class="card subscribeCard">
+                    <div class="cardContent">
+                        <h3>subscribe now</h3>
+                        <p>get all of our newest resipes immediately in your inbox!</p>
+                        <form class="subscribeEmail" action="subscribe">
+                            <input type="email" name="subscribeEmail" id="subscribeEmail" placeholder="Enter your email">
+                            <button type="submit" for="subscribeEmail"><i aria-label="Click to submit email"aria-hidden class="fas fa-long-arrow-alt-right"></i></button>
+                        </form>
+                        <div class="socialIcons">
+                            <ul>
+                                <li>
+                                    <a href="http://facebook.com" aria-label="Click link to Facebook page">
+                                        <i aria-hidden="true" class="fab fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://twitter.com" aria-label="Click link to Twitter page">
+                                        <i aria-hidden="true" class="fab fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com" aria-label="Click link to Instagram page" ><i aria-hidden="true" class="fab fa-instagram" ></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div> 
+
+        <div class="copyright">
+            <p class="smallWrapper">Copyrights@ 2015 by<span> POLAR</span>. All Rights Reserved </p>
         </div>
+
     </footer>
 </body>
 </html>

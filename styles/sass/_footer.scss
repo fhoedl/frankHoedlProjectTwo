@@ -1,1 +1,146 @@
-// FOOTER STYLING
+
+footer{
+    width: 100%;
+    background-color: $darkNeuralColour;
+}
+
+// CSS Grid Styling...
+.cardContainer {
+    padding: 4vw 0;    // top and bottom
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    justify-content: space-between;
+}
+
+// Cards Sizing
+.cardContent {
+    width: 320px;
+    padding: 8%;
+        p{
+            border-bottom: 1px solid 
+        }
+}
+
+// Footer Type colours
+.card{
+    .contactCardTitle{
+        color: $accentColor;
+        margin: 0;
+    }
+    h3 {
+        color: #FFF; 
+        margin-top: 6px;
+    }
+    p { 
+        color: $mediumWarmColor;
+    }
+    .socialIcons i{
+        color: #FFF;
+    }
+}
+
+// Lines underneath text
+.card p,
+.card form{
+    padding-bottom: .7vw;
+    border-bottom: 1px solid #9999994f;
+}
+.card form{
+    padding-bottom: 1.3vw;
+}
+.contactCard p:last-of-type,
+p.noBorderF,
+.subscribeCard p:last-of-type{
+    border-bottom: 1px solid transparent;
+}
+
+// Minor Type & Padding Tweaks
+p.xPaddingF,
+.subscribeCard p:last-of-type{
+    padding-top: 1.5vw;
+}
+.contactCard p:first-of-type{
+    padding-top: .4vw;
+    padding-bottom: 1.1vw;
+}
+
+// Email Form Styling
+.subscribeCard {
+    form{
+        display: flex;
+            button,
+            input[type='email']{
+                display:block;
+                padding: 1rem;
+                margin:0;
+                border:none;
+                }
+            input[type='email']{
+                background-color: #666666;
+                color: $bkgdLightColor;
+                font-style: italic;
+                padding-right: 7rem; 
+                width: 80%;
+                text-align: left;
+            }
+                button{
+                color: $bkgdLightColor;
+                background-color: $accentColor;
+                width:20%;
+                padding: 10px;
+                    i{
+                        font-size: 2rem;
+                    }
+            }
+    }
+}
+
+// Styling Social Media Icons
+.socialIcons ul{
+    padding-top: .5vw;
+    font-size: 1.6rem;
+    display: flex;
+    width: 35%;
+    justify-content: space-between;
+}
+
+// Copyright Element(footer)
+.copyright {
+    color:  darken( $bkgdLightColor, 40% );
+    background-color: $darkestNeutralColor;
+     
+    span {
+        color: $accentColor;
+    }
+}
+
+@media (max-width: 620px){
+    
+    footer{
+        width: 100%;
+        background-color: $darkNeuralColour;
+    }
+
+// CSS Grid Styling...
+    .cardContainer {
+        grid-template-columns: 1fr;
+    }
+    .cardContainer {
+        width:100%;
+        // padding: 4vw 0 0 4vw;
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: (300px)[auto-fit];
+        grid-template-columns: repeat(auto-fit, 300px);
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: center;
+        padding-right: 10vw;
+    }
+
+    .card{
+        align-self: flex-start;
+    }
+
+
+}

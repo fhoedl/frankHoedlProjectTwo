@@ -1,24 +1,97 @@
-
 // NOTE: PDF original image size 960 wide x 730 high
 .featureContainer {
+    margin-bottom:40px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
-    grid-auto-rows: 37.5vw;
+    grid-auto-rows: auto; 
+    background-color: $bkgdLightColor;
+}   
+
+.featureRecipe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    min-width: 300px;
+    max-width: 630px;
+    margin: auto;
+    text-align: center;
+        div {
+            margin-top: .6vw;
+        }
+        p {
+            margin-top:3vw;
+        }
+        a.button{
+            margin-top: 5%;
+            background-color: $accentColor;
+            color: #fff;
+            padding: 1.2vw 3vw;
+            margin-bottom: 4vw;
+        }
+}
+
+
+.featureCategories{
+    display: grid;
+    align-items: center;
+    padding-top: 3vw;
+    // max-height: 37.5vw;
+}
+
+.featureCategories ul{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 48%);
+    justify-content: center;
+    padding: 3vw 2vw 2vw 3vw;
+    align-content: center;
+    grid-column-gap: 4%;
+    grid-row-gap: 1%;
+        li{
+            width: 100%;
+            display:grid;
+            grid-template-columns: 1fr 85%;
+            grid-template-rows: 2vw 125px;
+            grid-column-gap: 3%;
+            grid-row-gap: 3%;
+            // padding-top: 1.7vw;
+                i{
+                    text-align:center;
+                    justify-content: center;
+                }
+                h3{
+                    align-items: center;
+                    margin: .9rem 0 0 0;
+                }
+                p{
+                    color: $mediumWarmColor;
+                    align-items: start;                   
+                    grid-column: 1/-1;
+                    justify-content: end;
+                    margin-top: 0; 
+                    padding-left: calc(.8rem + 3vw); 
+                    width:100%;
+                    padding-top: calc(.6rem + .5vw);
+                    font-size: calc(.6rem + .6vw);
+                    line-height: calc(.7rem + .9vw);
+                }
+        }
 }
 
 
 // NOTE: PDF original image size 640 wide x 460 high
 .galleryContainer {
+    margin-top:40px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-rows: 21vw;
-    // Media Querie?
-    // grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
-    // grid-auto-rows: 25vw;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    grid-auto-rows: calc(250px + 3vw);
 }
 
 .galleryImg {
-    background-color: #777;  
+    background-color: #777;
 }
 
 .featureImg img,
@@ -29,19 +102,21 @@
     object-fit: cover;
 }
 
+//..end Gallery
+
 
 // SECTION
 .restaurant {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 48.5vw;
+    width: 37%;
+    min-width: 300px;
+    padding: 0 0 8vw 0;
+    margin: auto;
         div{
             display: flex; // required as display doesn't inherit
             flex-direction: column;
-            width: 780px;
-            position: relative;
             margin: auto;
                 img,
                 h2,
@@ -53,23 +128,185 @@
         }
 }
 
-// Positioned relative to container...
-.sticker{
-    position: absolute;
-    z-index:1;
-    top: -115px;
-    right: 50px;
-}
- 
-.restaurant .graphicLine {
-    width: 60px;
-    height: 3px;
-    background-color: #64A604;
-}
+.restaurantImgElements {
+    display: flex;
+    position: relative;
+        .restaurantImg {
+            padding-top: 12vw;
+            width: 100%;
+        }
+        .sticker{
+            position: absolute;
+            width:39%;
+            z-index:1;
+            bottom: 41%;
+            right: -12%;
+            transition: all .7s ease-in;
+        }
+}   
 
 .restaurant h2{
-    padding: 5% 0 1% 0;
+    padding: 4% 0 2% 0;
 }
+
+.graphicLine {
+    width: 60px;
+    height: 3px;
+    background-color: $accentColor;
+}
+
+blockquote .graphicLine {
+    margin: .5vw  0 2vw 0;
+}
+
 .restaurant p{
     padding-top: 3%;
+}
+
+
+blockquote {
+    background-color: $bkgdAccentColor;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 5vw 20%;
+    margin-top: 50px;
+    margin: auto;
+    text-align: center;
+        div.quote,
+        .scrollNav {
+            display:flex;
+            flex-direction: row;
+            padding: 0 0 1.5vw 0;
+        }
+        .scrollNav {
+            margin-bottom: 7%;
+        }
+        i{
+            color: $bkgdLightColor;  
+            margin: 0 auto;
+        }
+}
+
+blockquote h2 {
+    padding-bottom: 0;
+}
+
+div.quote p{
+    padding: 0 8%;
+    font-style: italic;
+    font-size: 2.2rem;
+    line-height: 3.4rem;
+    // font-size: calc(1.1rem + .6vw);
+    // line-height: calc(1.3rem + 1.5vw);
+}
+
+div.quote i{
+    padding: 10px 0;
+        &:last-of-type{
+            display:flex;
+            align-items: flex-end;
+            padding-bottom: 30px;
+        }
+}
+
+div.scrollNav i{
+    font-size: 2.6rem;
+    width: 60px;
+    padding: 1vw 0; 
+    // add'l padding to ScrollNav only
+    &:hover {
+        // color:lighten($bkgdLightColor, 200%); 
+        color:#fff;
+    }
+}
+
+@media(max-width: 1120px){
+    div.quote p{
+        font-size: calc(1.1rem + 1vw);
+        line-height: calc(1.3rem + 1.7vw);
+        min-width: 300px;
+    }
+    div.quote i{
+        padding: 0;
+        font-size: calc(1.5rem + 2vw);
+    }  
+    .featureRecipe a.button{
+        padding: 17px 32px;
+    } 
+    .featureContainer {
+        grid-template-columns: 1fr;
+    } 
+    .featureRecipe {
+        h2{
+            margin-top: 7vw;
+        }
+            a.button{
+                margin-bottom: 8vw;
+            }
+    }
+    .featureCategories ul{
+        margin: 3vw 2vw;
+            li{
+                grid-template-rows: 2vw 150px;
+                    p{
+                        align-items: start;                   
+                        grid-column: 2/-1;
+                        justify-content: start;
+                        padding-left: 0; 
+                        width:90%;
+                    }
+            }
+    }
+}
+
+@media(max-width: 620px){
+    .restaurantImgElements .sticker{
+        right: 4%;
+    }
+    .featureCategories ul{
+        grid-template-columns:1fr;
+        margin: 0 auto;
+        padding: 15vw 1vw 2vw 20vw;
+            li{
+            grid-template-rows: 2vw 150px;
+                p{
+                    margin-top: 3vw; 
+                    font-size: 1.1rem;
+                    line-height: 1.6rem;
+                    margin-bottom: 4vw;
+                }
+            }        
+    }   
+    .featureCategories ul{
+        margin: 0 auto;
+        margin-bottom: 10vw;
+            li{
+            grid-template-rows: 2vw 150px;
+                p{
+                    width:70%;
+                }
+        }
+    }
+
+}
+
+@media(max-width: 490px) {
+    div.quote i {
+        display:none;
+        &:last-of-type{
+            display:none;
+        }
+
+    } 
+}
+
+
+@media(min-width: 1350px){
+    .galleryContainer {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: 22vw;
+    }
 }

@@ -1,20 +1,47 @@
+// BASE SIZE 10px, with default 16px browser
 html {
     font-size: 62.5%;
-    /* BASE SIZE 10px, with default 16px browser */
+
 }
 
+// BASE FONTS
 body {
     font-family: $primaryFont;
     font-family: $secondaryFont;
     color: #000;
+        // background-color: red;
+        // TEST STYLING
 }
 
-/* Headings */
+// Wrappers
+.smallWrapper {
+    width: 64%;
+    max-width: 1120px;
+    margin: 0 auto
+}
+
+// Stripping Lnk Styling
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+        li{
+            list-style: none;
+    }
+}
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+
+// TEXT Styling
 h1,
 h2,
 h3,      
 h4,
 h5,
+a.button,
 nav li,
 nav a
 {
@@ -22,150 +49,50 @@ nav a
     text-transform: uppercase ;
 }
 
-/* Title Text */
 h1{
     font-size: 4.6rem;
     line-height: 2.4rem;
-    letter-spacing: 1.1rem;
-
+    letter-spacing: .6rem;
 }
-/* Body Style */
+
 h2{
-    font-size: 1.8rem;
+    font-size: 2.4rem;
     line-height: 3.6rem;
     letter-spacing: .5rem;
 }
-nav li,
-.socialIcons {
+h3,a.button,nav li,
+.socialIcons{
     font-size: 1.4rem;
     line-height: 1.6rem; 
 }
-h3{
-    font-size: 1.4rem;
-    line-height: 1.6rem; 
+
+h4 {
+    font-size: 3.6rem;
     letter-spacing: .2rem;
 }
+
+a.button,h3{
+    letter-spacing: .1rem;
+}
+
 p {
     font-family: $secondaryFont;
     font-size: 1.4rem;
     line-height: 2.4rem;
 }
 
-/* 
-topBar
-topMainMenu
-topMobileMenu
-subMenu
-featureRecipe
-button
-feature
-featureRecipe
-featureCategories
-featureImg
-restaurants
-galleryContainer
-galleryImg
-sticker
-quote
-card
-contactCard
-contactCardTitle
-contactName
-contactAddress
-contactTel
-postsCard
-postsCardTitle
-subscribeCard
-subscribeEmail
-socialIcons
-smlSocialIcon
-
-
-------------------------
-Blog Page...
-blogHead
-featureBlog
-blogTitleHead
-blogTitle
-blogInfo
-blogDate
-blogBy
-blogCategory
-blogReveal
-blogShown
-blogText
-blogTagTitle
-blogTagItems
-blogShareTitle
-blogShareSocial
-blogSocialIcons /socialIcons(Header) /smlSocialIcon(Header)
-blogAuthor
-blogAuthorInfo
-blogLinks
-blogLinkImg
-blogLinkTitle
-
-
-...icons
-fas
-<i class="fas fa-plus"></i>
-<i class="fas fa-shopping-bag"></i>
-<i class="fas fa-search"></i></li>              f002
-<i class="fas fa-lemon"></i>                    f094
-<i class="fas fa-utensils"></i>                 f2e7
-<i class="fas fa-coffee"></i>                   f0f4
-<i class="fas fa-glass-martini"></i>            f000
-<i class="fas fa-leaf"></i>                     f06c
-<i class="fas fa-utensil-spoon"></i>            f2e5
-<i class="fas fa-quote-left"></i>               f10d
-<i class="fas fa-quote-right"></i>              f10e
-<i class="fas fa-chevron-left"></i>             f053
-<i class="fas fa-chevron-right"></i>            f054
-<i class="fas fa-long-arrow-alt-right"></i>     f30b
-
-..social icons      
-fab
-
-fa-instagram        f16d
-fa-twitter          f099
-fa-facebook-f       f39e
-*/
-
-// .fa, .fas, .fab,{
-// 	font-weight: 900;
-// 	font-size: 3rem;
-// }
-
-//
-
-blockquote i,
-.feature i{
+//ICON Sizing
+.quote i,.scrollNav i,.feature i{
     font-weight: 900;
     font-size: 3.2rem;
 }
-
 .scrollNav i {
-    font-size: 2rem;
+    font-size: 2.4rem;
 }
-
-
-
-ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
+.quote i{
+    font-size: 4rem;
 }
-li{
-    list-style: none;
-}
-/* FIXES li and ul */
-
-a {
-    text-decoration: none;
-    // removes underline
-    // color: inherit;
-}
-
 .socialIcons a {
     color: #000;
 }
+
